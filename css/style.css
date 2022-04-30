@@ -148,3 +148,32 @@ h1, h2 {
 .grid-6 .box:nth-child(2){
     grid-column: 1/2;
 }
+
+
+/* 7 */
+/* ?  Grid Fr y Grid Repeat */
+.grid-7{
+    display: grid;
+    height: 500px;
+    /* grid-template-columns: 2fr repeat(2, 1fr); */
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+
+/* 8 */
+/* ?  Grid Gap */
+.grid-8{
+    display: grid;
+    height: 500px;
+    /* grid-template-columns: 2fr repeat(2, 1fr); */
+    grid: repeat(2, 20rem) / repeat(3, 1fr);
+    gap: 4rem;
+    /* 
+        gap: 1rem;
+        colum-gap: 1rem;
+        row-gap: 1rem; 
+    */
+}
+.grid-8 .box{
+    margin: 0;
+}
