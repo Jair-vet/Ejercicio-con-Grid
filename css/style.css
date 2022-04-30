@@ -56,3 +56,48 @@ h1, h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
+
+
+/* 1 */
+/* ? Display Grid */
+/* 
+    Flexbox y Grid
+    Solo afectan al primer nivel de hijos
+*/
+.grid-1{
+    display: grid;
+}
+
+/* 2 */
+/* ? Grid Template Columns */
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+.grid-2 .box:nth-child(2){
+    /* En donde voy a posicionar este elemento */
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+
+    /* shortcut */
+    grid-column: 1 / 2;
+}
+
+/* 3 */
+/* ? Grid Template Rows */
+.grid-3{
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(3, 300px);
+    /* (las veces que se repite, el tamaño) */
+
+    /* Manera repetitiva */
+    /* grid-template-rows: 300px 300px 300px ; */
+    /* Definimos el tamaño de las cajas  */
+}
+.grid-3:nth-child(2){
+    /* grid-row-start: 1;
+    grid-column-end: 2; */
+    /* Shorcut */
+    grid-row: 1 / 2;
+}
